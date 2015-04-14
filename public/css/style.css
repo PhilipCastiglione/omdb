@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+a {
+  color: #8e5ece;
+}
+
+/* HEADER */
+header {
+  background: #b8b8b8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header ul {
+  background: #dfdfdf;
+  padding: .7em;
+}
+
+header li {
+  list-style: none;
+  display: inline;
+  padding: 1em;
+}
+
+header h1 {
+  padding-top: .3em;
+  font-size: 2.5em;
+}
+
+header h3 {
+  font-weight: normal;
+  font-style: italic;
+  padding-bottom: 1em;
+}
+
+.header-divider {
+  height: 12em;
+}
+
+/* FOOTER */
+footer {
+  background: #dfdfdf;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  height: 3em;
+  font-size: .8em;
+  max-width: 70%;
+  margin: 5px auto 0 auto;
+  text-align: left;
+}
+
+.footer-divider {
+  height: 3em;
+}
+
+/* SEARCH SECTION */
+form {
+  margin: 4em 0;
+}
+
+input {
+  padding: .25em;
+  font-size: 2.5em;
+  line-height: 2em;
+}
+
+button {
+  margin-left: .5em;
+  padding: .25em;
+  font-size: 2.5em;
+  vertical-align: bottom;
+}
+
+button img {
+  max-height: 2.5em;
+}
+
+/* ERROR */
+
+.error {
+  margin: 2em auto;
+  font-size: 3em;
+}
+
+/* RESULTS */
+.results {
+  max-width: 70%;
+  margin: 1em auto;
+}
+
+.poster {
+  width: 35%;
+  margin-right: 2%;
+  display: inline-block;
+}
+
+#poster {
+  max-width: 100%;
+}
+
+.display-wrapper {
+  display: inline-block;
+  width: 62%;
+  vertical-align: top;
+}
+
+.display-wrapper div {
+  display: inline-block;
+}
+
+.header-wrapper {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.title {
+  width: 60%;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.year {
+  width: 20%;
+  font-size: 2em;
+}
+
+.rating {
+  width: 15%;
+  font-size: 1.5em;
+  vertical-align: center;
+  border: 1px solid black;
+}
+
+.runtime {
+  width: 100%;
+  text-align: left;
+  font-size: .8em;
+}
+
+.blurb {
+  width: 100%;
+  text-align: left;
+  padding: .5em;
+}
+
+.description-wrapper {
+  width: 100%;
+  vertical-align: top;
+  margin: 1em 0;
+}
+
+.sub-header {
+  line-height: 1.5em;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.actors {
+  width: 25%;
+  text-align: left;
+  padding: .5em;
+  margin-right: 2%;
+  vertical-align: top;
+}
+
+.actors li {
+  list-style: square;
+}
+
+.crew {
+  width: 32%;
+  padding: .5em;
+  margin-right: 2%;
+  text-align: left;
+  vertical-align: top;
+}
+
+.awards {
+  width: 25%;
+  padding: .5em;
+  text-align: left;
+  vertical-align: top;
+} 
+
+.ratings-wrapper {
+  margin: 2em 0;
+}
+
+.score {
+  margin: 0 1.5em;
+}
+
+/* OTHER PAGES */
+.content-wrapper {
+  max-width: 70%;
+  margin: 2em auto;
+}
+
+.search-results {
+  text-align: left;
+}
+
+.search-results li {
+  margin: .5em;
+  margin-left: 2em;
+}
+
+article * {
+  text-align: left;
+}
+
+article h2 {
+  margin: .75em 0;
+}
+
+article li {
+  margin: .5em;
+  margin-left: 2em;
+}
+
+article a {
+  color: red;
+}
+
+form.history {
+  margin: 1em;
+}
+
+button.history {
+  font-size: 1em;
+}

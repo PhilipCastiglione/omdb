@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /> -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/assets/images/favicon.png">
+  <title>OMDbGQI</title>
+</head>
+<body>
+  <header>
+    <h1>
+      OMDbGQI
+    </h1>
+    <h3>
+      The Open Movie Database Graphical Query Interface
+    </h3>
+    <nav>
+      <ul>
+        <li><a href="/">Search</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/history">History</a></li>
+        <li><a href="/donate">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="header-divider"></div>
+
+  <%= yield %>
+  
+  <div class="footer-divider"></div>  
+  <footer>
+    <div class="footer">
+      &copy; Copyright 2015 Philip Castiglione<br>
+      Just kidding, you can have it
+    </div>
+  </footer>
+
+</body>
+</html>

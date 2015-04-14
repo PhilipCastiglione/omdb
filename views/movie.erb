@@ -1,0 +1,67 @@
+<div class="results">
+  <div class="poster">
+    <img id="poster" src="<%= @movie["poster"] %>" alt="poster not available">
+  </div>
+  <div class="display-wrapper">
+    <div class="header-wrapper">
+      <div class="title">
+        <%= @movie["title"] %>
+      </div>
+      <div class="year">
+        <%= @movie["year"] %>
+      </div>
+      <div class="rating">
+        <%= @movie["rated"] %>
+      </div>
+    </div>
+    <div class="runtime">
+      Run time: 
+      <%= @movie["runtime"] %>
+    </div>
+    <div class="blurb">
+      <%= @movie["plot"] %>
+    </div>
+    <div class="description-wrapper">
+      <div class="actors">
+        <span class="sub-header">Starring:</span>
+        <% actors = @movie["actors"].split(",") %>
+        <ul>
+          <% actors.each do |actor| %>
+          <li>
+            <%= actor %>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="crew">
+        <p><span class="sub-header">Genre:</span>
+        <%= @movie["genre"] %></p>
+        <p><span class="sub-header">Director:</span>
+        <%= @movie["director"] %></p>
+      </div>
+      <div class="awards">
+        <span class="sub-header">Awards:</span>
+        <% awards = @movie["awards"].split(",") %>
+        <p>
+          <% awards.each do |award| %>
+            <%= award %>
+          <% end %>
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div class="ratings-wrapper">
+      <div class="score">
+        Metascore: 
+        <%= @movie["metascore"] %>
+      </div>|
+      <div class="score">
+        IMDb rating:
+        <%= @movie["imdbrating"] %>
+      </div>|
+      <div class="score">
+        <%= "<a target='_blank' href='http://www.imdb.com/title/#{@movie["imdbid"]}'>#{@movie["title"]} on IMDb</a>" %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="content-wrapper">
+  <div class="search-results">
+    <h1>Search Results</h1>
+    <ul>
+      <% @movie_data["Search"].each do |result_item| %>
+      <% list_text = "#{result_item["Title"]} (#{result_item["Year"]})" %>
+      <li><%="<a href=\"/movie/#{result_item["Title"]}\"> " + list_text %></a></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

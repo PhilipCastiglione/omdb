@@ -1,0 +1,14 @@
+<div class="content-wrapper">
+  <article>
+    <h2>Search History</h2>
+    <ul>
+      <% @full_history.each do |history_item| %>
+      <% list_text = "#{history_item['title']} (#{history_item['year']})" %>
+      <li><%= "<a href=#{history_item['link']}> " + list_text %></a></li>
+      <% end %>
+    </ul>
+    <form class="history" action="/history/clear" method="post">
+      <button class="history">clear history</button>
+    </form>
+  </article>
+</div>
